@@ -1,0 +1,91 @@
+---
+Title: Bug 修复
+Weight: 60
+---
+
+== Providing a Bug Fix
+
+* To provide a code contribution for an issue you will need to set up
+your own fork of the SuiteCRM repository, make your code changes, commit
+the changes and make a Pull Request to the appropriate branch on the
+SuiteCM repository. See our
+link:../forking/[Quick Guide to Fork SuiteCRM]. Once you have set up your forked repository you can
+begin making commits to the project. 
+
+* First, determine which base branch your bug fix should use. 
+
+{{%notice info%}}The `hotfix-7.10.x` branch will be merged into `hotfix` and the `develop` branch so unless your bug
+is `hotfix` or `develop` specific, make the PR to `hotfix-7.10.x`.{{%/notice%}}
+
+{{<mermaid align="center">}}
+graph TD;
+  Bugfix{Bugfix}-->|Your PR|hotfix-7.10x;
+  hotfix-->|Merged Into|master;
+  hotfix-7.10x-->|Merged Into|7.10.x
+  hotfix-7.10x-->|Merged Into|hotfix;
+  hotfix-->|Merged Into|develop;
+{{< /mermaid >}}
+
+
+* Separate each issue fix into a new branch in your repository (Either
+from the `hotfix-7.10.x` or `hotfix` branch) and name it with the issue
+ID e.g. _bugfix_3062_ or _issue-1234_.
++
+e.g. to create the branch from `hotfix-7.10.x` with the following git command:
++
+`git checkout -b _bugfix_3062_ upstream/hotfix-7.10.x`
+
+* When committing to your individual bugfix branch, it helps to follow
+the message format below:
++
+`Fixed #1234 - <the subject of the issue>`
++
+e.g of a commit command 
++
+`git commit -m "Fixed #1436 - Reports with nested Parentheses are removing parameters"` + 
++
+This commit message format allows us to easily include all bug
+fixes within major and minor *Release notes*.
++
+If you are new to Writing Commit Messages in git follow the guide
+http://chris.beams.io/posts/git-commit/#seven-rules[here].
+
+* When pushing a branch that has been created from an upstream branch 
+to your remote fork, you will need to specify "origin", e.g.
++
+`git push origin _bugfix_3062_`
+
+=== Make a Bug Fix Pull Request
+
+* After you have made your commits and pushed them up to your forked
+repository you then create a
+http://help.github.com/articles/using-pull-requests/[Pull Request] to be
+reviewed and merged into the SuiteCRM repository. Make a new Pull
+Request for each issue you fix – *do not* combine multiple bugfixes into
+one Pull Request.
+
+* Ensure that in your Pull Request that the base fork is
+*salesagility/SuiteCRM* and base branch is either `hotfix-7.10.x` or `hotfix`
+with the head fork being *your repository* and a base branch of your unique bugfix branch e.g. _bugfix_1234_
+
+* We will automatically reject any Pull Requests made to the wrong
+branch!
+
+=== CLA Check
+
+If you have not signed our
+https://www.clahub.com/agreements/salesagility/SuiteCRM[CLA]
+(Contributor License Agreement) then your Pull Request will fail a check
+and won't be able to be merged into the project. You will only be required to sign
+this once.
+
+=== Travis CI
+
+When a new Pull Request is opened, Travis CI will test the merging of
+the origin and upstream branch and update the Pull Request. If this
+check fails you can review the test results and resolve accordingly. To
+test prior to making a Pull Request install PHPUnit via composer into
+your develop environment then cd into the tests directory and run:
+
+`sh runtests.sh`
+
