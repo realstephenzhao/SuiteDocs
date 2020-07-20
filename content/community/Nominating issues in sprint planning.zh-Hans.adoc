@@ -1,0 +1,38 @@
+---
+title: "提议到迭代计划中"
+weight: 30
+---
+
+:imagesdir: /images/en/community/
+
+== 如何提议
+
+以下内容将指导你如何提交你的或社区的问题（issue），我们会在每周的迭代中对其进行处理。
+
+
+. 遵循我们提供的模板留下你的评论。必须以下面的格式为准（纯英文），也请提供问题的链接并解释你为何提议。
++
+
+[source]
+----
+#### Link -
+<!--- Provide a link to the issue below -->
+
+#### Context -
+<!--- How has this bug affected you? -->
+<!--- Why do you feel like this issue should be included within the next sprint, please state so below -->
+----
+
+. 切换到迭代计划的问题（issue）并粘贴评论框中的模板然后完善你的信息。
++
+
+image:31sprintplanningimage.png[title="Sprint Planning Image"]
+
+
+. 一旦评论发布了，我们将检查你的请求并决定是否将其加入到我们的迭代周期中。
+
+
+
+{{% notice 提示 %}}
+若你的提议没有被选入我们一周的迭代中，你可以在下一次的迭代中再次提交它。
+{{% /notice %}}
