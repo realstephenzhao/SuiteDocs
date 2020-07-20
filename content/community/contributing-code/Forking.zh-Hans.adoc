@@ -1,11 +1,11 @@
 ---
-Title: Forking SuiteCRM
+Title: 克隆 SuiteCRM 项目
 Weight: 30
 ---
 
-== Quick Guide to Fork SuiteCRM
+== 克隆（Fork） SuiteCRM 项目的快速指南
 
-=== Fork the SuiteCRM repository
+=== 克隆 SuiteCRM 项目仓库
 
 You can do this entirely from the GitHub website. See
 https://help.github.com/articles/fork-a-repo/[Forking Git] to learn how.
