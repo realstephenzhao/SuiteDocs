@@ -1,0 +1,98 @@
+---
+Title:  提出问题
+Weight: 10
+---
+
+:experimental:
+
+== 提出问题
+
+问题是你认为项目可以改进的地方。例如，你可以报告在使用软件时遇到的问题或 bug、你认为缺少的功能或项目文档中的歧义。 
+
+当通过我们的 GitHub 仓库提出问题时，请确保你清楚地说明问题，包括复现问题的完整步骤、在哪个（些）版本的 SuiteCRM 中发现的该问题；如果相关，请说明软件运行的平台和问题的截图。这将使其他贡献者能够轻松地识别并有可能定位问题所在。以下是对应所有问题的 GitHub 指南。
+
+此为一个 https://github.com/salesagility/SuiteCRM/issues/8535[提问的范例^]。
+
+== 安全
+
+对于 SuiteCRM，我们非常重视其安全。因此如果你发现了安全风险，请发送电子邮件到 security@suiterm.com 来向我们报告。这将被递送给处理安全问题的产品团队。在安全小组成功处理问题之前，*请不要公开披露安全漏洞*。
+
+你的电子邮件将在工作周（周一至周五）内的 24 小时内得到确认，而且你将在工作周（周一至周五）内的 72 小时内收到对你电子邮件的更详细的回复，其中有说明处理此报告的后续步骤。
+
+
+== GitHub 标签
+
+=== 问题（Issue）标签类型
+
+您可以单击下面的标签以查看 Github 上当前已用该标签标记的实际问题（Issues）列表。
+
+[frame=none, cols="40,60"]
+|===
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/bug[bug]]| Confirmed or very likely to be a bug.
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Low%20Priority[Low priority]]| Low impact (e.g. visual only, typos, alignments).
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Medium%20Priority[Medium Priority]]| Medium impact blocker with a workaround.
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/High%20Priority[High Priority]]| A high impact blocker with no workaround.
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Fix%20Proposed[Fix Proposed]]| Issues with a related pull request.
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Pending%20Input[Pending Input]]| Pending input from issue raiser.
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Language[Language]]| Issues relating to language files
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Suggestion[Suggestion]]| Suggestions that will later be moved to https://trello.com/b/Ht7LbMqw/suitecrm-suggestion-box[Trello^]
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Question[Question]]| General questions (Should usually be posted to the community forum instead)
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Resolved%3A%20Next%20Release[Resolved: next release]]| Solved issues that will be closed after the next release.
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/invalid[Invalid]]| Issues that are invalid or non-reproducible.
+
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Duplicate[Duplicate]]| Issues which are duplicates of other issues.
+|===
+
+如果有人认为在推进下一版本的进程中某个问题（issue）应该有更高的优先级，那你应该阐明，我们对此是鼓励的。这也适用于应用了不正确的标签的问题。
+
+
+=== 代码合并请求（Pull Request）标签的类型
+
+您可以单击下面的标签以查看 Github 上当前已用该标签标记的实际代码合并请求（Pull Request）列表。
+
+[frame=none, cols="40,60"]
+|===
+
+|btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3AAssessed[Assessed]]|
+Pull requests that have been confirmed to fix the original issue by a SalesAgility member.
+
+|btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22Ready%20to%20Merge%22[Ready to Merge]]|
+Pull requests that have both been assessed and code reviewed by SalesAgility.
+
+|btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22Requires%20Tests%22[Requires Tests]]|
+Pull requests that require addition acceptance or unit tests before they can be merged.
+
+|btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22Contribution%20Community%22[Community Contribution]]|
+Pull requests that have been created by a member of the community.
+
+|btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3AEnhancement[Enhancement]]|
+Pull requests that add additional features or functionality. These pull requests will need to be reviewed by SalesAgility.
+
+
+|btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22In%20Review%22[In Review]]|
+Currently in-review and requires additional work from creator
+
+|btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22Wrong%20Branch%22[Wrong Branch]]|
+Pull requests that have been created to the wrong branch.
+
+|btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3ADuplicate[Duplicate]]|
+Duplicate of other pull requests.
+
+|===
+
+
+
+
+
+
