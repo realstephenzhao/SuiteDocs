@@ -1,10 +1,10 @@
 ---
-title: "为文档做贡献"
+title: "贡献文档"
 weight: 20
 chapter: true
 ---
 
-== 为文档做贡献
+== 贡献文档
 
 {{% children depth="3" showhidden="false" %}}
 
