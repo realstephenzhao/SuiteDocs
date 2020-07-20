@@ -29,29 +29,29 @@ Weight: 10
 [frame=none, cols="40,60"]
 |===
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/bug[bug]]| Confirmed or very likely to be a bug.
+|btn:[https://github.com/salesagility/SuiteCRM/labels/bug[bug]]| 已确认的或很可能是个 bug
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/Low%20Priority[Low priority]]| Low impact (e.g. visual only, typos, alignments).
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Low%20Priority[Low priority]]| 低度影响（比如仅仅是视觉本身、错别字、对齐）
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/Medium%20Priority[Medium Priority]]| Medium impact blocker with a workaround.
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Medium%20Priority[Medium Priority]]| 中度影响有变通解决方案的的阻止问题
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/High%20Priority[High Priority]]| A high impact blocker with no workaround.
+|btn:[https://github.com/salesagility/SuiteCRM/labels/High%20Priority[High Priority]]| 高度影响无变通解决方案的的阻止问题
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/Fix%20Proposed[Fix Proposed]]| Issues with a related pull request.
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Fix%20Proposed[Fix Proposed]]| 关联代码合并请求（pull request）的问题
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/Pending%20Input[Pending Input]]| Pending input from issue raiser.
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Pending%20Input[Pending Input]]| 待提问者的输入
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/Language[Language]]| Issues relating to language files
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Language[Language]]| 与语言文件相关的问题
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/Suggestion[Suggestion]]| Suggestions that will later be moved to https://trello.com/b/Ht7LbMqw/suitecrm-suggestion-box[Trello^]
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Suggestion[Suggestion]]| 稍后将被移往 https://trello.com/b/Ht7LbMqw/suitecrm-suggestion-box[Trello^] 的建议
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/Question[Question]]| General questions (Should usually be posted to the community forum instead)
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Question[Question]]| 一般性疑问（通常发布在社区论坛中而非这里）
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/Resolved%3A%20Next%20Release[Resolved: next release]]| Solved issues that will be closed after the next release.
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Resolved%3A%20Next%20Release[Resolved: next release]]| 在下个版本发布后将会关闭的已解决问题
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/invalid[Invalid]]| Issues that are invalid or non-reproducible.
+|btn:[https://github.com/salesagility/SuiteCRM/labels/invalid[Invalid]]| 无效或不可复现的问题
 
-|btn:[https://github.com/salesagility/SuiteCRM/labels/Duplicate[Duplicate]]| Issues which are duplicates of other issues.
+|btn:[https://github.com/salesagility/SuiteCRM/labels/Duplicate[Duplicate]]| 与其他问题重复的问题
 |===
 
 如果有人认为在推进下一版本的进程中某个问题（issue）应该有更高的优先级，那你应该阐明，我们对此是鼓励的。这也适用于应用了不正确的标签的问题。
@@ -65,29 +65,28 @@ Weight: 10
 |===
 
 |btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3AAssessed[Assessed]]|
-Pull requests that have been confirmed to fix the original issue by a SalesAgility member.
+已经被某位 SalesAgility 成员确认以修复原始问题的代码合并请求Pull requests that have been confirmed to fix the original issue by a SalesAgility member.
 
 |btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22Ready%20to%20Merge%22[Ready to Merge]]|
-Pull requests that have both been assessed and code reviewed by SalesAgility.
+已经被 SalesAgility 评定且经过代码审查的代码合并请求
 
 |btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22Requires%20Tests%22[Requires Tests]]|
-Pull requests that require addition acceptance or unit tests before they can be merged.
+在合并前需要额外验收或单元测试的代码合并请求
 
 |btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22Contribution%20Community%22[Community Contribution]]|
-Pull requests that have been created by a member of the community.
+已经被社区成员创建的代码合并请求
 
 |btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3AEnhancement[Enhancement]]|
-Pull requests that add additional features or functionality. These pull requests will need to be reviewed by SalesAgility.
-
+加入额外特性或功能的代码合并请求。这些合并请求将需要经过 SalesAgility 审查
 
 |btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22In%20Review%22[In Review]]|
-Currently in-review and requires additional work from creator
+正在审查中且需要发起者配合进行额外工作的代码合并请求
 
 |btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3A%22Wrong%20Branch%22[Wrong Branch]]|
-Pull requests that have been created to the wrong branch.
+已被创建到错误分支中的代码合并请求
 
 |btn:[https://github.com/salesagility/SuiteCRM/pulls?q=is%3Aopen+is%3Apr+label%3ADuplicate[Duplicate]]|
-Duplicate of other pull requests.
+重复性的代码合并请求
 
 |===
 
