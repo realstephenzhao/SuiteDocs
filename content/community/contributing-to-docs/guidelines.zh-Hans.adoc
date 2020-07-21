@@ -5,52 +5,40 @@ weight: 50
 
 :toc:
 
-For a full explanation of how to work in our Documentation files, you need to get acquainted 
-with Hugo (our rendering engine), Learn (our Hugo Theme), and Asciidoc (the markup style we use).
+要充分解释如何在我们的文档文件中工作，你得熟悉 Hugo（我们的渲染引擎）、学习（我们的 Hugo 主题）和 Asciidoc（我们使用的标记样式）。
 
-The explanations below are simply a shortlist of some frequently used syntax, and a few recommendations
-regarding naming conventions and other rules we adhere to, for consistency and other practical reasons.
+下面的解释只是一些常用语法的简短列表，以及一些关于命名约定和我们遵循的其他规则的建议，这些都出于一致性和其他实际原因。
 
 == 文件在路径中的位置
 
-Most often the files you will want to edit will be under `content` directory. That's where you find the 
-main sections of the guide, *User*, *Developer*, *Admin*, *Community* and *Technical Blog*.
+通常你要编辑的文件都位于 `content` 目录下，在这里你能找到文档指南的主要章节：*用户*, *开发者*、*管理员*、*社区* 和 *技术博客*。
 
-You may create new directories inside these, as appropriate for sub-sections; and you can create new files. 
-You should understand the way link:https://gohugo.io/content-management/organization/[Hugo uses 
-the directories and file placements] to generate content. We are currently not using Hugo's *Page Bundles*, 
-though we plan to use them in the future.
+你可以在其中为子章节创建新目录，还可以创建新文件。你应该了解 link:https://gohugo.io/content-management/organization/[Hugo 使用目录和文件位置] 生成内容的方式。我们目前并没有用到 Hugo 的 *Page Bundles*，但我们计划将来使用它们。
 
 == 命名文件
 
-Both for directory names and file names, we use the page titles as they appear in the front-matter, 
-but use only lowercase, and no spaces or special characters. 
+对于目录名和文件名，我们都使用页面标题来表示，因为它们出现在 front-matter 中，但仅使用小写字母，不可以出现空格或特殊字符。
 
-Basically, we are trying to emulate the way Hugo produces the final content under the `public` directory so that there
-isn't much difference between the source and the rendered content. We've found this tends to facilitate 
-managing the content.
+基本上，我们正在尝试模仿 Hugo 在 `public` 目录下生成最终内容的方式，以使源代码与渲染后的内容之间不会出现太大差异。我们发现，这样做有助于内容的管理。
 
-So a page in directory `Installation Guide` titled `Downloading & Installing` can get a filename 
-of `installation-guide/downloading-installing.adoc`.
+因此位于目录 `Installation Guide` 下的标题为 `Downloading & Installing` 的页面可以有这样的文件名：`installation-guide/downloading-installing.adoc`。
 
 === 命名翻译后的文件
 
-For translations, we keep the English file name (that's how Hugo gets the fact that these are 
-translated versions of the same thing) but add a language code before the `.adoc` extension.
+对于翻译，我们保留英文文件名（这是 Hugo 辨别同一文件的不同翻译版本的方式），但在 `.adoc` 扩展名前加上国际语言代码。
 
-So these are all translations of the same file (English, Spanish, Russian):
+所以这些是同一文件的所有翻译版本（英文、西班牙文、俄文）：
 
 ```
 requirements.adoc
 requirements.es.adoc
 requirements.ru.adoc
 ```
-Note that we could have used `requirements.en.adoc` for the English version, but we don't do that. 
-We keep the default language (English) without any language code at all.
+请注意，我们本可以使用 `requirements.en.adoc` 作为英文版本的文件名，但我们并未那样做。我们不在默认语言（英文）上使用任何国际语言代码并会保持下去。
 
-== Front-matter and Special Codes
+== Front-matter 和 Special Codes
 
-Each Asciidoc content file will start with a section called *Front-matter*:
+每个 Asciidoc 内容文件都从一个被称为 *Front-matter* 的部分开始：
 
 ```
 ---
