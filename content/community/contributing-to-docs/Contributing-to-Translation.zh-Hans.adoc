@@ -1,36 +1,36 @@
 ---
-Title: "Translate SuiteCRM"
+Title: "翻译 SuiteCRM"
 Weight: 50
 ---
 :experimental: ////this is here to allow btn:[]syntax used below
 
 :imagesdir: /images/en/community
 
-== Crowdin and SuiteCRM
+== Crowdin 和 SuiteCRM
 
-=== Crowdin it's an online platform to translate applications and web pages.
+=== Crowdin 是一个用来翻译应用和网页的在线平台。
 
-The SuiteCRM translation project uses Crowdin to setup a collaborative translation environment. Here you can translate your language and download any language pack ready to install in SuiteCRM. All you need is a browser, no install, no setup.
+SuiteCRM 翻译项目使用 Crowdin 作为协作翻译环境。在这里你可以翻译你的语言版本并下载任意语言包安装到 SuiteCRM 中。你只需要一个浏览器，不需安装和配置其他东西。
 
-==== SuiteCRM is translated in two related projects and you need to join both projects:
+==== SuiteCRM 有两个关联的翻译项目，你需要同时加入：
 
 [cols=2*,options=header]
 |===
-|A- Core language files
-|B- Using Joomla?
+|A- 核心语言文件
+|B- Joomla 集成
 
 |· SuiteCRM core - (latest version):  https://crowdin.com/project/suitecrmtranslations
 |If you are using Joomla you should also join and translate this project: +
 · Advanced OpenPortal (SuiteCRM /Joomla integration): https://crowdin.com/project/suitecrm-advanced-openportal
 |===
 
-=== How to translate
+=== 如何翻译
 
-1- Click https://crowdin.com/project/suitecrmtranslations[here] to take you to the crowdin site
+1- 点击 https://crowdin.com/project/suitecrmtranslations[这里] 将带你到 crowdin 网站
 
-2- Create an account and choose a language to join.
+2- 创建一个账户并选择一个语言加入其中
 
 image:29Crowdin.png[Crowdin]
 
-=== Start translating: https://crowdin.com/project/suitecrmtranslations
+=== 开始翻译：https://crowdin.com/project/suitecrmtranslations
 
