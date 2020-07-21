@@ -1,50 +1,47 @@
 ---
-Title: "Local Setup for Documentation Work"
+Title: "文档工作的本地配置"
 Weight: 40
 ---
 
-In order to contribute to the Documentation efforts, you can edit pages directly on Github. But if you want a more powerful setup for a better work experience, you can choose to set up a local copy of the files, install our build engine Hugo, and build and serve the site locally.
+为了贡献文档，你确实可以直接在 GitHub 上编辑页面。不过如果你想要更强大的配置以便拥有更好的工作体验，你可以配置一个文件项目的本地副本，安装我们使用的构建引擎 Hugo，然后构建并在本地运行文档站点。
 
-{{% notice warning %}}
-This is an advanced way of editing the Documentation, it should only be used by people with 
-the necessary technical skills and who want to work on this Documentation extensively.
+{{% notice 警告 %}}
+这是一种编辑文档的高级方法，它只应适用于那些具备必要技术能力并希望广泛参与文档工作的人员。 
 {{% /notice %}}
 
-== Install necessary software on your computer
+== 在你的计算机上安装必需的软件
 
-We need to be running the following packages:
+我们需要运行以下安装包：
 
-- Git (for source-control)
-- Asciidoctor (to handle Asciidoc mark-up)
-- Hugo (static-site engine)
+- Git（版本控制）
+- Asciidoctor（处理 Asciidoc 标记）
+- Hugo（静态网站引擎）
 
-{{% notice info %}}
-The following instructions are specific to Ubuntu 64-bit, but should be easy to adapt 
-to other Linuxes and MacOS. A Windows installation is also possible.
-See the links at the bottom of this article for specific instructions for other environments.
+{{% notice 提示 %}}
+下面的说明是针对 Ubuntu 64 位的，但应该很容易地适用于其他的 Linux 和 MacOS 系统。Windows 上的安装也是的。 有关其他安装环境的具体说明，请参阅本文底部的链接。
 {{% /notice %}}
 
 `sudo apt-get update`
 
 `sudo apt-get install git`
 
-Here's a handy command to download the latest Hugo release automatically:
+这行命令可以方面地下载最新版本的 Hugo：
 
 [source, bash]
 wget https://github.com`wget -qO- https://github.com/gohugoio/hugo/releases/latest | grep -oE -m 1 '\/gohugoio\/hugo\/releases\/download\/v[0-9]+.[0-9]+.[0-9]*\/hugo_[0-9]+.[0-9]+.[0-9]*_Linux-64bit.deb'`
 
-In case that doesn't work, the point is to get a command similar to this, replace the `0.53` with the latest version:
+要是上面的命令没用，使用以下命令可以达到类似的效果，只需把 `0.53` 替换成最新的版本号： 
 `wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb`
 
-Now install the newly downloaded package, if it's the only one in the current directory you can do it with:
+此时安装刚刚下载的包文件，如果当前文件目录下只有这一个，你可以这样做：
 
 `sudo dpkg -i hugo*.deb`
 
-Now check Hugo is operational with 
+现在检查 Hugo 的版本 
 
 `hugo version`
 
-Go to some appropriate directory, and use this command to create the SuiteDocs subtree and download everything:
+转到某些适当的目录，然后使用以下命令来创建 SuiteDocs 文件目录树并下载所有内容：
 
 `git clone https://github.com/salesagility/SuiteDocs.git`
 
@@ -52,43 +49,38 @@ Go to some appropriate directory, and use this command to create the SuiteDocs s
 
 `bundle install`
 
-That should pick up the local Gemfile asking for the "asciidoctor" package and install it. Check with:
+这会在本地创建 Gemfile 并请求 "asciidoctor" 依赖包，安装它然后检查版本：
 
 `asciidoctor --version`
 
-== Start running your local version of the site
+== 开始运行本地站点
 
-You're ready to go! To build the site you can simply type 
+已经就绪了！要构建站点，你可以键入 
 
 `hugo`
 
-But you won't be using that very often because it's enough to launch the local web server, 
-and any outstanding changes will get rebuilt:
+不过你不会常用到它，因为这足以启动本地的 web 服务器。其他未完成的更改都将使用以下命令进行重建：
 
 `hugo server --bind=0.0.0.0 --baseUrl=http://10.0.0.200 --navigateToChanged --enableGitInfo`
 
-Change that `10.0.0.200` into whatever is your local IP address. 
+注意将 `10.0.0.200` 改成任意的本地 IP 地址。
 
-This will be the URL you put in your browser to navigate the local website.
+这就是你要键入到浏览器地址栏中的 URL 以浏览本地站点。
 
-While doing your work on content, we recommend keeping a second terminal window always running the server, 
-so you can check any error messages, and see the server picking up your edits automatically and redeploying.
+在进行内容上的工作时，我们建议保持第二个终端窗口为常开状态始终运行服务器，以便你可以检查所有的错误消息，以及查看服务器（如何）自动地处理你的编辑内容并重新部署。
 
-== Advantages
+== 优点
 
-Apart from the advantages of collaborating on content via GitHub, this local setup lets you use the full
-power of Linux over your content, to `grep` it, `bash` it, `php` it... mass operations are quick and easy.
+除了通过 GitHub 在内容上进行协作的优点之外，这种本地设置还允许你就内容结合使用 Linux 的全部功能，比如 `grep`、`bash`、`php`... 大规模的操作既快速又简单。 
 
-The fast, automatic redeployments, complete with automatic browser navigation to changed content, 
-are extremely convenient while editing content.
+快速、自动的重新部署，以及对更改内容的自动浏览器导航，在编辑内容时非常方便。 
 
-Finally, the entire site is up for editing - not just textual content but also visual aspects, features, etc.
-Your contribution can be a new site feature coded in Golang.
+最后，整个站点都可以进行编辑：不仅仅是文本内容，还有视觉方面、功能等等。你可以用 Golang 编码一个新站点，这也是贡献。
 
-== Useful links
+== 有用的链接
 
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Installing Git^]
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[安装 Git^]
 
-https://gohugo.io/getting-started/installing/[Installing Hugo^]
+https://gohugo.io/getting-started/installing/[安装 Hugo^]
 
-https://asciidoctor.org/docs/install-toolchain/[Installing Asciidoctor^]
+https://asciidoctor.org/docs/install-toolchain/[安装 Asciidoctor^]
