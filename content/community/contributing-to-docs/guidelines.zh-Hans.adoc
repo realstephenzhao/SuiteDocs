@@ -89,14 +89,12 @@ and can serve as an example if you want to create others).
 
 在普通的文本内容中，我们遵循以下规则
 
-- Break lines approximately at the 80th column. Asciidoc ignores these line-breaks. We use them to facilitate 
-editing the source code on a typical 80 character wide console.
+- 大约在第 80 列处断行。Asciidoc 会忽视这些换行。我们这样用以便在典型的 80 字符宽的控制台上编辑源代码。
 
-- surround paths, file names, variable names and other expressions that might be useful to copy-paste 
-with backticks:
+- 使用重音符包裹路径、文件名、变量名和其他表达式有助于复制粘贴：
  
 ```text
-Source mark-up to allow easy copy of a path `/some/path` into your editor.
+此源标记允许你便捷复制一个路径 `/some/path` 到编辑器中。
 ```
 
 == 参考
