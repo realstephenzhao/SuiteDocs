@@ -1,54 +1,45 @@
 ---
-Title: "Opening an Issue about a page"
+Title: "就某页面提出问题"
 Weight: 20
 ---
 :experimental: ////this is here to allow btn:[]syntax used below 
 
 :imagesdir: /images/en/community
 
-== Contribute with comments, corrections or questions
+== 评论、改正、提问都是贡献
 
-In order to contribute to the Documentation efforts, you can open issues regarding pages directly on GitHub 
-which is the repository of our content.
+GitHub 上有我们的内容代码仓库，你可以在上面直接就相关页面进行提问，以便为文档贡献自己的力量。
 
-{{% notice info %}}
-You need a https://github.com/join[Github user account^] to open issues on the SuiteCRM Documentation Site. 
-If you don't have one yet, you will be given the opportunity to create one during this process.
+{{% notice 提示 %}}
+你需要一个 https://github.com/join[Github 用户账户^] 以便在 SuiteCRM 文档站点上提出问题。如果你还没有的话，你可以在此过程中创建一个。
 {{% /notice %}}
 
-=== 1. Navigate to the place you want to comment on 
+=== 1. 导航到你想评论的地方
 
-Simply use your browser to go to the relevant page. You can use the menus 
-and search feature to facilitate this.
+只需使用浏览器转到相关页面即可，你可以使用菜单和搜索功能来实现这一点。
 
-=== 2. Click "Issue"
+=== 2. 点击 "Issue"
 
-Every page on the site has an "Issue" link near the top.
+网站上的每个页面靠近顶部的地方都有一个 "Issue" 链接。
 
 image:27PageIssue.png[title="Issue link"]
 
-=== 3. Make your comments
+=== 3. 把你想说的东西写下来
 
-You are taken to GitHub where a text editor will allow you to edit the Issue. 
+你将被带到 GitHub 页面，其中的文本编辑器允许你编辑问题（Issue）。
 
 image:28EditIssue.png[title="Edit Issue"]
 
-It's important to realize that these Issues are about the Documentation page, not about SuiteCRM itself. 
-So please direct any technical questions or feature requests to the https://community.suitecrm.com[Forums^].
+需要注意的是：这些问题是与文档页面相关的，而非 SuiteCRM 本身。所以若你有任何有关 SuiteCRM 的技术问题或功能请求，请直接发到 https://community.suitecrm.com[论坛^] 中。
 
-Here, you can ask about something that needs to be clarified in the Documentation, 
-suggest an additional aspect to cover in this page, or tell us about anything that 
-you found wrong about the page.
+在这里，你可以就文档中需要澄清的内容进行提问、对本页中需要涵盖的其他方面进行建议、或者告诉我们你在本页中发现的任何错误。
 
-When you're done, click the green button 
-at the bottom that is labeled btn:[Submit new issue].
+当你编辑完成后，请点击底部标示为 btn:[Submit new issue] 的绿色按钮。
 
-=== That's it, you're done!
+=== 仅此而已，大功告成！
 
-Your proposed Issue is now up handed over to the members of the Community in charge of the 
-SuiteCRM Documentation site. They will receive an e-mail notification as soon as you finish your Issue.
+现在你的提问将交于负责 SuiteCRM 文档站点维护的社区成员检阅。一旦你成功进行了提问，他们就会收到一封电子邮件通知。
 
-You can check the status of every Issue, and participate in any discussion 
-about them by visiting https://github.com/salesagility/SuiteDocs/issues[this list^].
+你可以访问 https://github.com/salesagility/SuiteDocs/issues[此列表^] 来检查每个提问的状态，并参与相关讨论。
 
-Every small contribution matters! Thanks for helping out. 
+每一个小小的贡献都很重要！感谢你的帮助。
