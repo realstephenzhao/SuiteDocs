@@ -63,24 +63,18 @@ weight: 50
 ```
 :imagesdir: /images/en/admin
 ```
-For images, this directory should be specified as an absolute path (starting 
-with a `/`), not relative like `../../images`. Note that this guideline is just for images, 
-it doesn't apply for links to pages, which should be relative.
+对于图像，应将此目录指定为绝对路径（以 `/` 打头），而不是 `../../images` 之类的相对路径。请注意，这条指南仅适用于图像，不适用于指向页面的链接（页面链接应当是相对的）。
 
-- Including an automatically generated *Table of Contents* of the sections inside this file:https://learn.netlify.com/en/shortcodes/children/
+- 添加一个自动生成的文件内各部分（章节）的 *目录列表*：https://learn.netlify.com/en/shortcodes/children/
 ```
 :toc:
 ```
-- Including an automatically generated *Table of Contents* of the pages in directory levels below the current page, 
-to be used in pages that have a sub-directory. (This is a shorcode provided by link:https://learn.netlify.com/en/shortcodes/children/[our Theme^]).
+- 添加一个自动生成的位于当前页面目录级别下方的页面的目录列表，以用于具有子目录的页面。（这是一个 shorcode：link:https://learn.netlify.com/en/shortcodes/children/[我们的主题^]）
 
 ```
 {{%/* children depth="3" showhidden="true" */%}}
 ```
-- Including an automatically generated *List of GitHub Contributors* (for the *Release Notes* pages). You can 
-list an indefinte number of contributors. (This is a shortcode 
-link:https://github.com/salesagility/SuiteDocs/blob/master/layouts/shortcodes/ghcontributors.html[defined in our own site^]), 
-and can serve as an example if you want to create others).
+- 添加一个自动生成的 *GitHub 贡献者列表*（用于 *发行说明* 页面）。你可以列出数量不详的贡献者。（这是 link:https://github.com/salesagility/SuiteDocs/blob/master/layouts/shortcodes/ghcontributors.html[在我们自己的网站上定义的^] 一个短代码，如果你想创建其他的，它可以作为一个用来参照的例子。）
 ```
 {{%/* ghcontributors username1 username2 */%}}
 ```
