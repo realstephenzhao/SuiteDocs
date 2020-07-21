@@ -1,5 +1,5 @@
 ---
-title: Documentation Guidelines 
+title: 文档编写指南
 weight: 50
 ---
 
@@ -11,7 +11,7 @@ with Hugo (our rendering engine), Learn (our Hugo Theme), and Asciidoc (the mark
 The explanations below are simply a shortlist of some frequently used syntax, and a few recommendations
 regarding naming conventions and other rules we adhere to, for consistency and other practical reasons.
 
-== Placing files
+== 文件在路径中的位置
 
 Most often the files you will want to edit will be under `content` directory. That's where you find the 
 main sections of the guide, *User*, *Developer*, *Admin*, *Community* and *Technical Blog*.
@@ -21,7 +21,7 @@ You should understand the way link:https://gohugo.io/content-management/organiza
 the directories and file placements] to generate content. We are currently not using Hugo's *Page Bundles*, 
 though we plan to use them in the future.
 
-== Naming Files
+== 命名文件
 
 Both for directory names and file names, we use the page titles as they appear in the front-matter, 
 but use only lowercase, and no spaces or special characters. 
@@ -33,7 +33,7 @@ managing the content.
 So a page in directory `Installation Guide` titled `Downloading & Installing` can get a filename 
 of `installation-guide/downloading-installing.adoc`.
 
-=== Naming Translated Files  
+=== 命名翻译后的文件
 
 For translations, we keep the English file name (that's how Hugo gets the fact that these are 
 translated versions of the same thing) but add a language code before the `.adoc` extension.
@@ -54,7 +54,7 @@ Each Asciidoc content file will start with a section called *Front-matter*:
 
 ```
 ---
-title: Documentation Guidelines 
+title: 文档编写指南
 weight: 50
 ---
 ```
@@ -101,7 +101,7 @@ and can serve as an example if you want to create others).
 {{%/* ghcontributors username1 username2 */%}}
 ```
 
-== Content
+== 内容
 
 In the normal text content, we follow these rules
 
@@ -115,7 +115,7 @@ with backticks:
 Source mark-up to allow easy copy of a path `/some/path` into your editor.
 ```
 
-== References
+== 参考
 
 - Use normal Asciidoc links to navigate between files. 
 
