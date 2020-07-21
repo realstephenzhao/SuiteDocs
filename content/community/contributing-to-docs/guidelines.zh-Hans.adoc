@@ -46,24 +46,20 @@ title: 文档编写指南
 weight: 50
 ---
 ```
-Although there are link:https://gohugo.io/content-management/front-matter/[many things] that can 
-be defined here, we require only the `title` and `weight` properties. 
+尽管有 link:https://gohugo.io/content-management/front-matter/[很多东西] 可以在这里定义，但我们只使用 `title` 和 `weight` 属性。 
 
-The `weight` defines the position in the table of contents, that is, the order within the section where 
-the page belongs. We use increments of 10 for `weight` so that if we want to insert a new page in between 
-two other pre-existing pages, it's easier to find an available number. So we number them 10, 20, 30, etc.,
-instead of just 1, 2, 3, etc.
+`weight` 定义了目录中的位置，即页面所属部分的顺序。我们使用 10 作为 `weight` 的增量（步进），这样如果我们想在另外两个预先存在的页面之间插入一个新页面，那么就很容易找到一个可用的数字。所以我们把它们编号为 10、20、30 等，而非仅仅 1、2、3 等。 
 
-Some of the *Special Codes* that can be used at the beginning of the file, after the front-matter:
+一些 *Special Codes* 可以被用在文件的开头，紧随着 front-matter：
 
-- Drawing buttons with a special graphic look:
+- 使用特别的图形外观绘制按钮：
 ```
-:experimental:   ////this is here to allow btn:[]syntax used below 
+:experimental:   ////这是为了允许在下面使用 btn:[] 语法
 
-Example sentence indicating you can press a btn:[Save] on the user interface.
+这是一条表示你可以在用户界面上按下 btn:[Save] 的示例语句。
 ```
 
-- Setting the images base directory that will be used throughout the file:
+- 设置将在整个文件中使用的图像基础目录（base directory）：
 ```
 :imagesdir: /images/en/admin
 ```
@@ -91,7 +87,7 @@ and can serve as an example if you want to create others).
 
 == 内容
 
-In the normal text content, we follow these rules
+在普通的文本内容中，我们遵循以下规则
 
 - Break lines approximately at the 80th column. Asciidoc ignores these line-breaks. We use them to facilitate 
 editing the source code on a typical 80 character wide console.
@@ -105,15 +101,13 @@ Source mark-up to allow easy copy of a path `/some/path` into your editor.
 
 == 参考
 
-- Use normal Asciidoc links to navigate between files. 
+- 使用普通的 Asciidoc 链接在文件中导航
 
-- For pages, always use relative links where possible. This is essential for translated pages to be able to use
-the same navigation as English pages. So your links will look like this:
+- 对于页面，请尽可能使用相对链接。这对于翻译后的页面能够使用与英语页面相同的导航至关重要。因此，你的链接将如下所示：
 
 ```text
-Here is a link:../../admin/my-page.adoc[link for you to click!].
+这是一个 link:../../admin/my-page.adoc[你要去点击的链接！]
 ```
-Use the minimum amount of `..` necessary, and when backtracking through directories with `..`, 
-never go above the `content` directory, this is never necessary.
+尽量使用必须的最少数量的 `..`，当通过带 `..` 的目录回退时，千万不要跑到 `content` 目录上面，这毫无必要。
 
-- For images, use the `:imagesdir:` as explained above, and then use a link without a path.
+- 对于图像，如上面解释的那样使用 `:imagesdir:` 接着使用一个无路径的链接
