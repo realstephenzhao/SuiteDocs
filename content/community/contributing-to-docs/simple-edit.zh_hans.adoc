@@ -6,60 +6,48 @@ Weight: 10
 
 :imagesdir: /images/en/community
 
-== Your first simple edit
+== 首次尝试简单编辑
 
-In order to contribute to the Documentation efforts, you can edit pages directly on GitHub 
-which is the repository of our content.
+为了贡献文档，您可以直接在 GitHub 上编辑页面，我们的内容存储仓库就在上面。
 
-{{% notice info %}}
-You need a https://github.com/join[Github user account^] to edit pages on the SuiteCRM Documentation Site. 
-If you don't have one yet, you will be given the opportunity to create one during this process.
+{{% notice 提示 %}}
+你需要一个 https://github.com/join[Github 用户帐户^] 才能在 SuiteCRM 文档站点上编辑页面。如果你还没有的话，则可以在此过程中创建一个。
 {{% /notice %}}
 
-=== 1. Navigate to the place you want to edit
+=== 1. 导航到要编辑的地方 
 
-Simply use your browser to go to the page you want to edit. You can use the menus 
-and search feature to facilitate this.
+只需使用浏览器转到要编辑的页面即可，你可以使用菜单和搜索功能来实现这一点。
 
-=== 2. Click to "Edit this page"
+=== 2. 点击 "Edit this page"
 
-Every page on the site has an "Edit this Page" link near the top.
+网站上的每个页面靠近顶部的地方都有一个 "Edit this Page" 链接。
 
 image:24EditThisPage.png[title="Edit this page link"]
 
-=== 3. Make your changes
+=== 3. 进行更改
 
-You are taken to GitHub where a text editor will allow you to edit the source code of the file. 
-The format used is called https://asciidoctor.org/docs/what-is-asciidoc/[Asciidoc^], 
-and looks pretty much like plain text. 
+你将被带到 GitHub 页面，其中的文本编辑器将允许你编辑文件的源代码。我们使用的格式称为 https://asciidoctor.org/docs/what-is-asciidoc/[Asciidoc^]，它看起来非常像纯文本。
 
-If you're just editing text, don't bother learning the format, just go ahead and edit it!
+如果你仅仅是在编辑文本，则不必费心学习格式，只需继续进行编辑即可！
 
 image:25GitHubEditAndSave.png[title="Edit this page link"]
 
-In this example, we inserted the sentence highlighted in yellow, and we click the green button 
-at the bottom that is labeled btn:[Propose File Change].
+在本例中，我们插入了用黄色高亮显示的句子，然后去单击底部标示为 btn:[Propose File Change] 的绿色按钮。
 
-=== 4. Propose your changes by creating a Pull Request
+=== 4. 通过创建代码合并请求（拉取请求）来提议更改
 
-You could make additional changes to other files before proposing your change to the site maintainers. 
-But for our first simple edit we'll do it immediately.
+在向站点维护人员提议更改之前，你还可以对其他文件进行一些更改。但对于首次尝试简单编辑，我们选择立即执行此操作。
 
 image:26GitHubCreatePR.png[title="Edit this page link"]
 
-In this screen, you can improve the title of your proposal, add descriptive comments, and review your changes.  
-But that is all optional - all you _really_ have to do is press a green button again, this time 
-it's labeled btn:[Create pull request].
+在本场景下，你可以改进提议的标题、添加描述性评论并查阅更改项。但这都是可选的，你 _真正_ 要做的就是再次按下绿色按钮，此时按钮的文本标记为 btn:[创建代码合并请求]。
 
-=== That's it, you're done!
+=== 就这样，任务完成！
 
-Your proposed change is now up for evaluation by the members of the Community in charge of the 
-SuiteCRM Documentation site. They will receive an e-mail notification as soon as you finish your proposal.
+这时负责 SuiteCRM 文档站点的社区成员将对你提议的更改进行评估。一旦你成功进行了提议，他们就会收到一封电子邮件通知。
 
-You can check the status of every Pull Request, and participate in any discussion 
-about them by visiting https://github.com/salesagility/SuiteDocs/pulls[this list^].
+你可以访问 https://github.com/salesagility/SuiteDocs/pulls[此列表^] 来检查每个代码合并请求的状态，并参与相关讨论。 
 
-Every small contribution matters! Thanks for helping out. 
+每一个小小的贡献都很重要！感谢你的帮助。
 
-Of course, this was just a starter's guide. If you're ready to use more Asciidoc features 
-and really leverage all the power of Github, make sure you check out other tutorials. 
+当然，这只是入门指南。如果你准备好使用 Asciidoc 的更多特性并真正利用起 Github 的所有能力，你还得查看其他教程。
